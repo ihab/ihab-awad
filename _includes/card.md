@@ -34,7 +34,7 @@
 {% endif %}
 
 <div class="xcard">
-  <a href="/{{ entry.link }}/index.html">
+  <a href="{{ entry.link }}/index.html">
     <div><img src="{{ img_url }}" width="64px" height="64px"></div>
     <div class="xcard-title">{{ entry.title }}</div>
   </a>
