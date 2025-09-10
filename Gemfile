@@ -34,5 +34,3 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "jekyll-sitemap"
 
 gem 'jekyll-theme-portfolio', '~> 1.3'
-
-gem "github-pages", group: :jekyll_plugins
