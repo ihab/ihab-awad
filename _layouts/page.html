@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<style type="text/css">
+  .heading {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .heading-title {
+    padding-left: 20px;
+  }
+</style>
+
+<article>
+  {% if page.title %}
+  <header>
+    <div class="heading">
+      <img src="icon.png" width="64px" height="64px">
+      <h1 class="heading-title">{{ page.title | escape }}</h1>
+    </div>
+  </header>
+  {% endif %}
+  <section>
+    {{ content }}
+  </section>
+</article>

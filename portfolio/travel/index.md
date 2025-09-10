@@ -1,9 +1,7 @@
 ---
-layout: home
+layout: page
 title: My travels
 ---
-
-<img src="icon.png" width="64px">
 
 I have lived in a variety of different places throughout my life. I believe it has colored my experience very strongly, and I am grateful for what I have learned.
 

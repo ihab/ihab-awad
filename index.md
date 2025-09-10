@@ -34,7 +34,7 @@ layout: portfolio
 
 <div class="heading">
     <div class="heading-section">
-        <img src="ihab-awad.png" width="600px">
+        <img src="ihab-awad.png" width="300px">
     </div>
 
     <div class="heading-section">

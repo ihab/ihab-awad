@@ -1,30 +1,33 @@
 - title: Selected work projects
   entries:
-    - title: Thing Browser
-      link: portfolio/work/thing_browser
-
     - title: Google Caja
-      link: portfolio/work/caja
+      link: portfolio/google_caja
 
     - title: Caryoscope
-      link: portfolio/work/caryoscope
+      link: portfolio/caryoscope
+    
+    - title: Thing Browser
+      link: portfolio/thing_browser
 
-    - title: Verily Retinal Camera
-      link: portfolio/work/verily_retinal_camera
+    - title: FavaBeans
+      link: portfolio/favabeans
 
     - title: CppPromise
-      link: portfolio/work/cpppromise
+      link: portfolio/cpppromise
+
+    - title: Verily Retinal Camera
+      link: portfolio/verily_retinal_camera
 
 - title: Personal projects
   entries:
     - title: Rivets
-      link: portfolio/personal/rivets
+      link: portfolio/rivets
 
 - title: About me
   entries:
     - title: My ethos
-      link: portfolio/about_me/ethos
+      link: portfolio/ethos
 
     - title: My travels
-      link: portfolio/about_me/travel 
+      link: portfolio/travel 
 

@@ -1,5 +1,3 @@
-remote_theme: tedivm/jekyll-theme-portfolio
-
 title: Ihab Awad
 author: Ihab Awad
 email: ihab.awad@gmail.com
@@ -8,8 +6,12 @@ description: >
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+# remote_theme: tedivm/jekyll-theme-portfolio
+
+theme: jekyll-theme-portfolio
+
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

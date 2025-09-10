@@ -1,9 +1,7 @@
 ---
-layout: home
+layout: page
 title: My ethos
 ---
-
-<img src="icon.png" width="64px">
 
 A large part of how I am effective in teams is as a leader. Yet I am not, and do not seek to become, a people manager. My approach to leadership is based on my own experiences of work and life, and what I have observed to work best.
 
