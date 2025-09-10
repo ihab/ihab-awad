@@ -30,6 +30,13 @@ layout: portfolio
         font-weight: bold;
         padding-left: 5px;
     }
+
+    .section-blurb {
+        font-size: 12pt;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 </style>
 
 <div class="heading">
@@ -49,6 +56,7 @@ layout: portfolio
 {% for section in site.data.list %}
   <div class="section">
     <div class="section-title">{{ section.title }}</div>
+    <div class="section-blurb">{{ section.blurb }}</div>
     <div class="section-container">
       {% for entry in section.entries %}
         {% include card.md %}

@@ -1,30 +1,45 @@
-- title: Selected work projects
+- title: Deployed work projects
+  blurb: >
+    These made it out of the lab and were actually used in real life. This is a
+    partial selection because some of my work was not sufficiently public to
+    describe here in any useful detail.
   entries:
+
     - title: Google Caja
       link: portfolio/google_caja
 
     - title: Caryoscope
       link: portfolio/caryoscope
     
+    - title: Verily Retinal Camera
+      link: portfolio/verily_retinal_camera
+
+    - title: CppPromise
+      link: portfolio/cpppromise
+
+- title: Work demos and ideas
+  blurb: >
+    Gee-whiz ideas I presented in the scope of my full-time jobs. Some of these
+    intersected with or led to actual deployed work.
+  entries:
+
     - title: Thing Browser
       link: portfolio/thing_browser
 
     - title: FavaBeans
       link: portfolio/favabeans
 
-    - title: CppPromise
-      link: portfolio/cpppromise
-
-    - title: Verily Retinal Camera
-      link: portfolio/verily_retinal_camera
-
 - title: Personal projects
+  blurb: Hobbies and interests on my own time.
   entries:
+
     - title: Rivets
       link: portfolio/rivets
 
 - title: About me
+  blurb: Personal information.
   entries:
+
     - title: My ethos
       link: portfolio/ethos
 
