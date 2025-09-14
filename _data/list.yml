@@ -5,15 +5,15 @@
     describe here in any useful detail.
   entries:
 
+    - title: Verily Retinal Camera
+      link: portfolio/verily_retinal_camera
+
     - title: Google Caja
       link: portfolio/google_caja
 
     - title: Caryoscope
       link: portfolio/caryoscope
     
-    - title: Verily Retinal Camera
-      link: portfolio/verily_retinal_camera
-
     - title: CppPromise
       link: portfolio/cpppromise
 
