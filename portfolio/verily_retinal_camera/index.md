@@ -61,6 +61,8 @@ Our initial deployment was at the [Baton Rouge Clinic](https://batonrougeclinic.
 
 | <img src="brc-clinic.jpg" height="320px"> | <img src="vidcoe.jpg" height="320px"> |
 
+<p></p>
+
 ### Next generation
 
 For our next-generation system, we identified key areas to improve:
@@ -86,6 +88,8 @@ One day I realized that our hardware-in-the-loop (HIL) testing was badly lacking
 One other day, I noted that the [optically correct model eyes](https://ocularinc.com/ocular-imaging-eye-model.html) we were using for testing were expensive and in short supply. I designed a 3D printed alternative, and my mechanical engineer friend Bo Lu collaborated to improve the geometry and texture of the artificial retina. We now had dozens and dozens of perfectly useable model eyes for about $40 each (dominated by the cost of the [60 diopter plano-convex lens](https://www.edmundoptics.com/p/20mm-dia-x-16mm-fl-uncoated-molded-aspheric-condenser-lens/30547/) -- the rest of the parts were nearly free).
 
 | <img src="model-eye-build.jpg" height="400px"> | <img src="model-eye-collection.jpg" height="400px"> |
+
+<p></p>
 
 These model eyes worked so well that they were accepted by our test team for some of their FDA-visible QA testing, which meant that photos of me building my 3D printed eyes in my garage were now part of our Quality Management System (QMS).
 

@@ -88,6 +88,8 @@ For every hobby of mine, I imagine myself creating a business. Not because I am 
 | <a href="cad-0.jpg"><img src="cad-0.jpg" width="160px"></a> | <a href="cad-1.jpg"><img src="cad-1.jpg" width="160px"></a> |  <a href="cad-2.jpg"><img src="cad-2.jpg" width="160px"></a> |
 | <a href="cad-3.jpg"><img src="cad-3.jpg" width="160px"></a> | <a href="cad-4.jpg"><img src="cad-4.jpg" width="160px"></a> | <a href="cad-5.jpg"><img src="cad-5.jpg" width="160px"></a> |
 
+<p></p>
+
 However, spinning up an operation like this takes money up front, and the business case just wasn't there. Alas.
 
 ## Match hole CNC sheet metal
