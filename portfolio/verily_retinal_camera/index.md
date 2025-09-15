@@ -103,4 +103,4 @@ For our second version of the VRC, we had the time to do much more thorough anal
 
 1. Clean design of the communication between our on-camera state machine and the React user interface, and clean design of the React user interface state. The UI was implemented as a Redux app which accepted a "state vector" published by the camera via a Websocket, and all behavior flowed functionally from that. Where the UI had local state, that was clear and also used Redux.
 
-I interpreted my role on the team as a "tech lead" to be a force multiplier, cheerleader, and when that was done, finisher of tasks along with everyone else. I was privileged to serve the team and would work with any of them again on an upcoming project.
+I interpreted my role as tech lead to be an architect, force multiplier, cheerleader, and when that was done, finisher of tasks along with everyone else. My goal was to be someone whom people came to for guidance voluntarily, because that made them more productive and helped them enjoy their job. I was privileged to serve the team and would work with any of them again on an upcoming project.
