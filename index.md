@@ -14,6 +14,7 @@ layout: portfolio
 
     .section-container {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .heading {

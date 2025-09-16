@@ -15,7 +15,7 @@ As the [Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/diabetic-ret
 
 A fundus image shows the back of the eye -- including portions of the retina. The [Cleveland Clinic](https://my.clevelandclinic.org/health/diagnostics/fundus-photography) shows an example of an eye specialist acquiring a fundus image with a specialized camera, and beside it is an example of a typical fundus image:
 
-| <img src="fundus-photography.jpg" width="320px"> | <img src="Fundus_photograph_of_normal_left_eye.jpg" width="320px"> |
+| <img src="fundus-photography.jpg" class="inline-img"> | <img src="Fundus_photograph_of_normal_left_eye.jpg" class="inline-img"> |
 
 The challenges with obtaining a good fundus image include:
 
@@ -53,13 +53,13 @@ I joined when the VRC was a working prototype. It had some C++ programs on an nV
 
 The hardware teams created a minimum viable product in a saleable form factor, which won [a prestigious design award](https://www.idsa.org/awards-recognition/idea/idea-gallery/verily-retinal-camera/).
 
-<img src="vrc.png" width="640px">
+<img src="vrc.png" class="inline-img">
 
 For the user interface, we decided to bundle a convertible Chrome laptop, running a React Website hosted on the camera itself. This allowed us to use standard Web technologies to hit the ground running and create a much more fluid and intuitive experience than is usual for medical devices.
 
 Our initial deployment was at the [Baton Rouge Clinic](https://batonrougeclinic.com/news-education/verily-retinal-service-at-the-baton-rouge-clinic/). We were all quite excited to jump in and help people right in the center of the "diabetes belt" with low cost solutions that could save their eyesight. And some of our deployments were as wide-ranging as the [Virgin Islands Diabetes Center of Excellence](https://www.vidcoe.org/diabetes-retinal-imaging-machine/).
 
-| <img src="brc-clinic.jpg" height="320px"> | <img src="vidcoe.jpg" height="320px"> |
+| <img src="brc-clinic.jpg" class="inline-img"> | <img src="vidcoe.jpg" class="inline-img"> |
 
 <p></p>
 
@@ -87,7 +87,7 @@ One day I realized that our hardware-in-the-loop (HIL) testing was badly lacking
 
 One other day, I noted that the [optically correct model eyes](https://ocularinc.com/ocular-imaging-eye-model.html) we were using for testing were expensive and in short supply. I designed a 3D printed alternative, and my mechanical engineer friend Bo Lu collaborated to improve the geometry and texture of the artificial retina. We now had dozens and dozens of perfectly useable model eyes for about $40 each (dominated by the cost of the [60 diopter plano-convex lens](https://www.edmundoptics.com/p/20mm-dia-x-16mm-fl-uncoated-molded-aspheric-condenser-lens/30547/) -- the rest of the parts were nearly free).
 
-| <img src="model-eye-build.jpg" height="400px"> | <img src="model-eye-collection.jpg" height="400px"> |
+| <img src="model-eye-build.jpg" class="inline-img"> | <img src="model-eye-collection.jpg" class="inline-img"> |
 
 <p></p>
 

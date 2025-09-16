@@ -13,7 +13,7 @@ My dad's best friend growing up in the 1940s was a young Egyptian boy named Yusu
 
 In the following photo, we see (left to right): Grandpa Hamed, my dad Abd-el-Hamid, myself, and my son Aden.
 
-<img src="four-awads.jpg" width="400px">
+<img src="four-awads.jpg" class="inline-img">
 
 ## Living in Nigeria
 
@@ -21,13 +21,13 @@ My parents escaped the rather oppressive regime of <a href="https://en.wikipedia
 
 And back then, I had aspirations to engineering. My dad was an aeronautical engineer, so my mind went to airplanes.
 
-<img src="ihab-rubber-plane.jpg" height="400px">
+<img src="ihab-rubber-plane.jpg" class="inline-img">
 
 ## Coming to the USA
 
 I started college at the University of Florida a year after arriving in the USA, and, naturally, studied engineering. I then went to grad school at the University of Minnesota -- twice, one for mechanical engineering and one for computer science. There I met my wife, and we moved to Silicon Valley.
 
-<img src="ihab-squissa.jpg" width="400px">
+<img src="ihab-squissa.jpg" class="inline-img">
 
 ## Where I ended up
 

@@ -10,24 +10,24 @@ I have been -- and to some extent remain --
 
 I love airplanes, and in particular, aircraft structures. And the most commonly used aircraft structure, for lightness and stiffness, is a _semimonocoque_. First let's start with a pure monocoque:
 
-<img src="monocoque.png" width="400px">
+<img src="monocoque.png" class="inline-img">
 
 This is a structure where a thin shell resists all the loads, like an egg. Now, the problem is that thin shells can _buckle_ when under load:
 
-<img src="buckling.jpg" width="200px">
+<img src="buckling.jpg" class="inline-img">
 
 The answer is to stiffen the shell just enough so it does not buckle, typically using _stringers_. The result is a semimonocoque:
 
-<img src="semimonocoque.png" width="400px">
+<img src="semimonocoque.png" class="inline-img">
 
 This basically describes the insides of any commercial airliner, and most other aircraft, as with this Boeing 737 in the factory. In the right hand side photo, you can see how both the wing and the fuselage are semimonocoque shells, and they intersect in a really cool way:
 
-<img src="b737-fuse.png" height="250px">
-<img src="b737-center.png" height="250px">
+<img src="b737-fuse.png" class="inline-img">
+<img src="b737-center.png" class="inline-img">
 
 Now the way this is _manufactured_, traditionally, is via riveted sheet metal:
 
-<img src="riveted-frame.png" width="553px">
+<img src="riveted-frame.png" class="inline-img">
 
 Notice how _all_ the parts of the structure in this picture are made of _amazingly thin_ sheets of metal. Notice the clever arrangement of the rivet lines to transmit loads in the correct direction. And this is how floppy sheets of thin metal become a stiff, strong structure that can take off, fly, and land. The way something so wobbly becomes strong and stiff as you assemble the pieces is ... amazing. It's a wonderful illustration of structural principles in action.
 
@@ -49,7 +49,7 @@ The USA is the birthplace of aviation, and the best place to be an airplane fan!
 [Airventure](https://www.eaa.org/airventure), run by the 
 [Experimental Aviation Association](https://www.eaa.org/). This is an annual Woodstock of aviation. The sheer volume of airplanes, as far as the eye can see, is stunning:
 
-<img src="osh-camping.jpg" width="800px">
+<img src="osh-camping.jpg" class="inline-img">
 
 Many of these airplanes are built from scratch, using plans that are sold by hobbyists, or from kits made by companies. And yes, a kit built airplane can be built from top-notch materials and fitted with modern navigation and safety equipment! While I am happy with my co-ownership of
 [N291DR](../n291dr_cvsf/index.html), I hope one day to build a plane of my own. My choice would be the
@@ -77,7 +77,7 @@ See the
 
 At the time, we lived in Palo Alto, and my son attended the local elementary school. I hooked up his trail-a-bike to my contraption, resulting in this ridiculous arrangement:
 
-<img src="ihab-aden.jpg" width="800px">
+<img src="ihab-aden.jpg" class="inline-img">
 
 One day, as we rolled around the neighborhoods in this configuration, none other than Steve Jobs himself drove past us, and looked at us with a bemused smile.... And that was 15 seconds of fame that my little creation got.
 
