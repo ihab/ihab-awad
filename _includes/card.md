@@ -27,11 +27,7 @@
 
 </style>
 
-{% if entry.img %}
-  {% assign img_url = entry.img %}
-{% else %}
-  {% assign img_url = entry.link | append: "/icon.png" %}
-{% endif %}
+{% assign img_url = entry.link | append: "/icon.png" %}
 
 <div class="xcard">
   <a href="{{ entry.link }}/index.html">
