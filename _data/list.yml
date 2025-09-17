@@ -33,6 +33,12 @@
   blurb: Hobbies and interests on my own time.
   entries:
 
+    - title: Airball
+      link: portfolio/airball
+
+    - title: Pilot
+      link: portfolio/pilot
+
     - title: Rivets
       link: portfolio/rivets
 

@@ -29,7 +29,7 @@ The result is _trauma_. Even "good" things like having a car and being able to c
 
 As I hint when speaking about my [ethos](../ethos/), I do not believe that yelling on social media is an effective way to resolve the dilemmas that modernity has imposed on our collective minds. But I also don't believe in doing nothing. My contribution is to help create inclusive, hyper-local kinship.
 
-Plant and Soul California, through its community events, creates this kinship among people of all ages, national origins, income levels, and ideological viewpoints. Young volunteers from tech companies mix with empty nester parents, and people bring their relatives. Our 
+Plant and Soul California, through its community events, creates this kinship among people of all ages, national origins, income levels, and ideological viewpoints. Young volunteers from tech companies mix with empty nester parents, and people bring their relatives.
 
 ## How I try to help
 
