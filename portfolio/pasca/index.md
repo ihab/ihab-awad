@@ -35,7 +35,7 @@ Plant and Soul California, through its community events, creates this kinship am
 
 The organization has built a community space on 76 Race Street in San Jose, and a community garden in a nearby elementary school. I attend regular social events and help with prep and cleanup. I talk to all who would listen about why the mission appeals to me, even as the tech-focused person I am. And I help with maintenance and construction.
 
-Plant and Soul California is my main social hub, I count among my fellow volunteers people that I met through the organization and whom I have come to consider chosen family.
+Plant and Soul California is my main social hub, and I count among my fellow volunteers people that I met through the organization and whom I have come to consider chosen family.
 
 | <img src="pasca-fam-0.jpg" class="inline-img"> | <img src="pasca-fam-1.jpg" class="inline-img"> | <img src="pasca-fam-2.jpg" class="inline-img"> |
 
