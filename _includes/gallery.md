@@ -4,8 +4,9 @@
         display: flex;
     }
     .gallery-img {
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 150px;
+        max-height: 150px;
+        border-radius: 5px;
     }
     .gallery-entry {
       text-align: center;
@@ -21,12 +22,14 @@
     }
 </style>
 
-<div class="gallery-container">
-  {% for img in imgs %}
-    <div class="gallery-entry">
-      <a href="{{ img }}">
-        <img src="{{ img }}" class="gallery-img">
-      </a>
+<p>
+    <div class="gallery-container">
+        {% for img in imgs %}
+            <div class="gallery-entry">
+                <a href="{{ img }}">
+                    <img src="{{ img }}" class="gallery-img">
+                </a>
+            </div>
+        {% endfor %}
     </div>
-  {% endfor %}
-</div>
+</p>

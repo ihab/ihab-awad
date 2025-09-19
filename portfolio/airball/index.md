@@ -106,23 +106,47 @@ As the project progressed, I required more accurate data, and also needed to tes
 
 First, I tried out my existing probe against the outlet of the wind tunnel. You can see how the instrument shows a consistent speed regardless of which way the probe is pointed into the airflow; this is a result of the calibration that accounts for the off-axis errors.
 
-{% assign imgs = "wind-tunnel-quick-check.png" | split: "," %}
-{% include gallery.md %}
+{% include imagelink.md img="wind-tunnel-quick-check.png" link="https://photos.app.goo.gl/YZCGZ8Dv3iew5edA8" %}
 
 To position the test article at different angles within the tunnel, I needed accurate 2-axis motion control. I splurged and bought two [Dynamixel](https://www.robotis.us/dynamixel-xm540-w270-t/) servos, and never looked back. For all the time and money I invested in the project so far, these things were a zero-hassle solution and worked amazingly. To measure pressures, I used some of the [Honeywell HSC pressure sensors](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/zh-cn/localized/datasheets/sps-siot-trustability-hsc-series-high-accuracy-board-mount-pressure-sensors-50099148-a-ciid-151133-cn.pdf) that I had from various prototypes, and I precision-calibrated them with a home-made water manometer.
 
 {% assign imgs = "wind-tunnel-sensors.jpg,wind-tunnel-probe.jpg" | split: "," %}
 {% include gallery.md %}
 
-See the 
-[**photo album**](https://photos.app.goo.gl/vXBPdkm69QaMvYfZ9) for more photos!
+See the [**photo album**](https://photos.app.goo.gl/vXBPdkm69QaMvYfZ9) for more photos!
 
-The result of this work is in the [`airball-tunnel`](https://github.com/airball-aero/airball-tunnel/blob/master/data/2022-07/doc/README.md) Github repo. The result is a series of pressures at various points on the test articles, as a function of the angle relative to the air stream:
+This work is in the [`airball-tunnel`](https://github.com/airball-aero/airball-tunnel/blob/master/data/2022-07/doc/README.md) Github repo. The result is a series of pressures at various points on the test articles, as a function of the angle relative to the air stream:
 
 {% assign imgs = "alpha-beta-q.png,alpha-beta-down.png" | split: "," %}
 {% include gallery.md %}
 
 This information is used by the calibration code in the [`airball-probe`](https://github.com/airball-aero/airball-probe/tree/main/airball_probe_esp32/calibration) Github repo to generate tables that are used by the firmware.
 
-## Probe design and construction
+## Air data probe basics
+
+The air data probe has gone through many design iterations. The majority of them were tailored towards a wireless, battery powered installation, allowing it to be tried on any airplane. The quantities measured are:
+
+* Angle of attack, _α_
+* Angle of yaw, _β_
+* Dynamic pressure, _q_
+* Static pressure, _p_
+* Temperature, _T_
+
+This 5-tuple (_α_, _β_, _q_, _p_, _T_) is enough to:
+
+* Fully characterize the relative wind vector;
+* Derive the airplane's altitude (with knowledge of barometric pressure from a nearby weather station); and
+* Derive the airplane's rate of climb or descent (with numerical differentiation).
+
+To compute the 5 unknowns (_α_, _β_, _q_, _p_, _T_), we require 5 sensor readings, which are:
+
+* 3X differential pressure sensors ([Honeywell HSC series](https://automation.honeywell.com/ca/en/products/sensing-solutions/sensors/pressure-sensors/board-mount-pressure-amplified/trustability-hsc-series));
+* 1X barometric pressure sensor ([Bosch BMP280](https://www.bosch-sensortec.com/media/boschsensortec/downloads/product_flyer/bst-bmp280-fl000.pdf) or equivalent); and
+* 1X temperature sensor (TI [TMP102](https://www.ti.com/lit/ds/symlink/tmp102.pdf)).
+
+All variants of the air data probe so far have used these components, along with an [ESP32](https://www.espressif.com/en/products/socs/esp32) to collect the data and transmit it over a Wi-Fi connection. The code is in the [`airball-probe`](https://github.com/airball-aero/airball-probe/) Github repo, and is mostly Arduino code (mainly to take advantage of Arduino libraries supporting the various sensors) with a few FreeRTOS primitives where needed.
+
+## Display device basics
+
+The data display has also gone through lots of iterations, but in all cases, it has been a Raspberry Pi single-board computer with an LCD panel, often with a rotary push encoder to change settings. The software is a C++ program that does some math, and paints the display using the [Cairo](https://www.cairographics.org/) UI library.
 

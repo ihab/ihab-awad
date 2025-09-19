@@ -4,8 +4,9 @@
         display: flex;
     }
     .gallery-img {
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 150px;
+        max-height: 150px;
+        border-radius: 5px;
     }
     .gallery-entry {
       text-align: center;
@@ -21,10 +22,12 @@
     }
 </style>
 
-<div class="gallery-container">
-  <div class="gallery-entry">
-    <a href="{{ include.link }}">
-      <img src="{{ include.img }}" class="gallery-img">
-    </a>
+<p>
+  <div class="gallery-container">
+    <div class="gallery-entry">
+      <a href="{{ include.link }}">
+        <img src="{{ include.img }}" class="gallery-img">
+      </a>
+    </div>
   </div>
-</div>
+</p>
