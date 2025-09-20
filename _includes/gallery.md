@@ -22,9 +22,11 @@
     }
 </style>
 
+{% assign imgs_array = include.imgs | split: "," %}
+
 <p>
     <div class="gallery-container">
-        {% for img in imgs %}
+        {% for img in imgs_array %}
             <div class="gallery-entry">
                 <a href="{{ img }}">
                     <img src="{{ img }}" class="gallery-img">
