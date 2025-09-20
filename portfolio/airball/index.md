@@ -183,21 +183,29 @@ The next step was a minimum viable PCB and mechanical build that put all the wir
 
 {% include gallery.md imgs="new-display-first-front.jpg,new-display-first-side.jpg" %}
 
-And as you can see from this video, the utility of the device was immensely improved as a result of the brightness and "heads up" location right on the aircraft centerline. Thank you Jimmy:
+And as you can see from this video, the utility of the device was immensely improved as a result of the brightness and "heads up" location right on the aircraft centerline. Thank you Jimmy! Check out this video:
 
-{% include imagelink.md img="new-display-first-flying.png" link="https://photos.app.goo.gl/zDef3VpSJ52WqYiZ6" %}
+{% include imagelink.md img="new-display-first-flying.jpg" link="https://photos.app.goo.gl/zDef3VpSJ52WqYiZ6" %}
 
 In addition, due to the complexity of the Dart settings editor, I went back to using a plain push encoder knob to change settings using a minimal firmware UI. I programmed the knob using CircuitPython to act as a [USB HID](https://en.wikipedia.org/wiki/USB_human_interface_device_class) device, which made things easy to interface together.
 
 {% include gallery.md imgs="new-display-first-knob.jpg" %}
 
-The next step was to design a custom PCB around this concept. This was a carrier board for a Raspberry Pi [Compute Module 4](https://www.raspberrypi.com/products/compute-module-4/) with an SD card slot for the boot file system.
+The next step was to design a custom PCB around this concept. This is a carrier board for a Raspberry Pi [Compute Module 4](https://www.raspberrypi.com/products/compute-module-4/) with an SD card slot for the boot file system.
 
-In addition to the LCD circuitry, it contained a [1 Mbit I2C EEPROM](https://www.digikey.com/en/products/detail/stmicroelectronics/M24M01-DFDW6TP/4729292) for parameter storage, which can be mapped to a file on Raspbian. I created an [`atomic_store`](https://github.com/airball-aero/airball-display/blob/main/src/airball/util/atomic_store.cpp) utility to format the data in two alterating "banks" to preserve integrity if the system is powered down during a write operation.
+In addition to the LCD circuitry, it contains a [1 Mbit I2C EEPROM](https://www.digikey.com/en/products/detail/stmicroelectronics/M24M01-DFDW6TP/4729292) for parameter storage, which can be mapped to a file on Raspbian. I created an [`atomic_store`](https://github.com/airball-aero/airball-display/blob/main/src/airball/util/atomic_store.cpp) utility to format the data in two alterating "banks" to preserve integrity if the system is powered down during a write operation.
 
-The main interface to the outside world is a USB-C port supporting reverse power delivery. Because previous experience with the Raspberry Pi 3A+ showed flakey connect/disconnect behavior of the built-in USB system, I added a GPIO-resettable [USB hub IC](https://www.microchip.com/en-us/product/usb2412) to act as the standards compliant interface to the outside world. This was a convenient form factor, because it allowed me to use any peripherals that Linux supports, and hook up my display to a USB/Ethernet adapter and log into it in the laboratory! USB-C is also a really convenient and compact wiring standard, and cables are easy to get.
+The main interface to the outside world is a USB-C port supporting reverse power delivery. Because previous experience with the Raspberry Pi 3A+ showed flakey connect/disconnect behavior of the built-in USB system, I added a GPIO-resettable [USB hub IC](https://www.microchip.com/en-us/product/usb2412) to act as the standards compliant interface to the outside world. This is a convenient form factor, because it allowed me to use any peripherals that Linux supports, and hook up my display to a USB/Ethernet adapter and log into it in the laboratory! USB-C is also a really convenient and compact wiring standard, and cables are easy to get.
 
-I could now install the system in my airplane and have a convenient panel-mounted knob for adjusting settings!
+{% include gallery.md imgs="small-display-components.png,small-display-rpi.png,small-display-opened.jpg,small-display-back.jpg" %}
 
-{% include gallery.md imgs="small-display-components.png,small-display-rpi.png,small-display-opened.jpg,small-display-back.jpg,small-display-installed-display.jpg,small-display-installed-knob.jpg" %}
+I could now install the system in my airplane and have a convenient panel-mounted knob for adjusting settings! This was finally the form factor I was looking for all that time, with **all** critical flight information displayed right where I could see it:
+
+{% include gallery.md imgs="small-display-installed-display.jpg,small-display-installed-knob.jpg,small-display-installed-flying.jpg" %}
+
+## Next generation probe
+
+I turned my attention to the air data probe, hoping to shrink the form factor and make it more reliable. After a lot of experience with the battery powered version, it was becoming clear that people just wanted a more permanently installable unit. As I shopped my work around, I came to realize that my primary "market" is people with [Experimental Amateur-Built](https://www.faa.gov/aircraft/gen_av/ultralights/amateur_built) aircraft, on which it's far easier to install accessories without complex FAA approvals. The "clip-on" and battery charging are less useful there.
+
+I redesigned the probe PCBs to re-arrange the layout, adding among other things a voltage regulator and a CANBus interface. Now there were three PCBs: A main compute module; a carrier for 3 main pressure sensors using SPI; and a carrier for the barometer and thermometer using I2C.
 
