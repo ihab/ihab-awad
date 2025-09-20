@@ -35,6 +35,6 @@ I am perenially deracinated; native to nowhere, and unable to take my situated-n
 
 When grandfather Hamed left his village, he adopted the styles of the Ottoman and European colonial powers that were at that time prevalent in the Middle East. As his descendant having worked at Alphabet for 20 years, I have inherited a great amount of the privilege that he helped create, and it has served me very well.
 
-But I also inherited an at best enigmatic relationship with my own Egyptian body. To take on this progress narrative, one often has to leave behind the sense that one is okay to just _be_, without justification. One has to contend with a variety of colonial pecking orders, im which one is sometimes up and sometimes down, but never just _okay_, and these have intersected with my various situations in the places where I have lived.
+But I also inherited an at best enigmatic relationship with my own Egyptian body. To take on this progress narrative, one often has to leave behind the sense that one is okay to just _be_, without justification. One has to contend with a variety of colonial pecking orders, in which one is sometimes up and sometimes down, but never just _okay_, and these have intersected with my various situations in the places where I have lived.
 
 The gift is that, from all this variety, I can see the common threads of human wonder and fallibility. There is no _them_ and _us_; there is just _everyone_, trying their best to live in a rapidly changing world. And I get to be here to experience it.

@@ -11,8 +11,7 @@ Loss of control inflight is an important problem leading to injuries and fatalit
 
 Consider an airplane cruising along. It is likely moving straight ahead through the air, and the air flow impinging on it is, conversely, coming from straight ahead:
 
-{% assign imgs = "relative-wind-cruise.png" | split: "," %}
-{% include gallery.md %}
+{% include gallery.md imgs="relative-wind-cruise.png" %}
 
 Now consider an airplane preparing to land. It is likely moving slowly, and flying downwards. However, the way it is moving _through the air_ is such that it is _mushing_ downwards, and the air flow impinging on it is weaker and comes much more from below.
 
@@ -46,8 +45,7 @@ The first iteration of this idea was an Android app, using flight data broadcast
 
 What followed was a "science fair" style demo rig, for my pilot friends to try out.
 
-{% assign imgs = "demo-science-fair.jpg" | split: "," %}
-{% include gallery.md %}
+{% include gallery.md imgs="demo-science-fair.jpg" %}
 
 Another demo was to run the Android app in Google Glass, using Bluetooth and another Android device to broadcast actual flight data from my friend Paul Eastham's airplane:
 
@@ -105,8 +103,7 @@ See the [**photo album**](https://photos.app.goo.gl/vXBPdkm69QaMvYfZ9) for more 
 
 This work is in the [`airball-tunnel`](https://github.com/airball-aero/airball-tunnel/blob/master/data/2022-07/doc/README.md) Github repo. The result is a series of pressures at various points on the test articles, as a function of the angle relative to the air stream:
 
-{% assign imgs = "alpha-beta-q.png,alpha-beta-down.png" | split: "," %}
-{% include gallery.md %}
+{% include gallery.md imgs="alpha-beta-q.png,alpha-beta-down.png" %}
 
 This information is used by the calibration code in the [`airball-probe`](https://github.com/airball-aero/airball-probe/tree/main/airball_probe_esp32/calibration) Github repo to generate tables that are used by the firmware.
 
@@ -161,3 +158,31 @@ In use, settings were changed via Wi-Fi using a Dart Web app served from a Web s
 My "customers" got the full packaging experience:
 
 {% include gallery.md imgs="proto1/pack/IMG_20220410_203544032.jpg,proto1/pack/IMG_20220414_183200587.jpg,proto1/pack/IMG_20220414_205318352.jpg,proto1/pack/IMG_20220414_205443146.jpg" %}
+
+See the [**more complete build album**](https://photos.app.goo.gl/6UBZfob4zw4UfJUm6) for this system for more photos!
+
+## STOL antics with Jimmy
+
+Along the way, I met my friend Jimmy O'Neal, who owns a RANS S-20 "Raven" based in Camarillo, CA ([KCMA](https://skyvector.com/?ll=34.20968155820602,-119.10263644844828&chart=24&zoom=1)). He is an amazing off-airport STOL pilot and became a mentor to me in my own piloting journey. And, he really loved the Airball concept and became my most dedicated, vocal, and insightful tester:
+
+{% include gallery.md imgs="jimmy-probe-install.jpg,jimmy-rans-s20.jpg" %}
+
+Jimmy uses Airball to compete in a STOL contests, and credits the intuitive human-machine interface with not only his ability to fine-tune his flying, but also with getting safely out of unexpected situations in the back country:
+
+{% include imagelink.md img="jimmy-national-stol.png" link="https://www.youtube.com/watch?v=fyoe3qHYqzE&t=14325s" %}
+
+## Next generation display
+
+Based on feedback from Jimmy, it was clear that the system needed to be more "heads-up" and visible to the pilot. I chose a [Newhaven 2.4 inch 1000 nit 240x320 TFT panel](https://newhavendisplay.com/2-4-inch-sunlight-readable-tft-without-touchscreen/) which, at that time, was available with a SPI or parallel interface. I did not find any comparable LCD panels that had a standard RGB interface allowing me to use (say) a [TFP401](https://www.adafruit.com/product/2218) with the Raspberry Pi HDMI output. But SPI did not give me an adequate frame rate. I therefore needed a more "custom" driver.
+
+My solution was to use the Raspberry Pi [Secondary Memory Interface](https://forums.raspberrypi.com/viewtopic.php?t=280242) to build a very simple display driver, sending data via the [8080 protocol](https://www.displaymodule.com/blogs/knowledge/the-interface-of-8080) to the display controller. I mapped 16 bits of the Raspberry Pi GPIO to the interface, allowing a very fast 1-2 millsecond frame refresh rate. Once all the hardware was debugged, the actual code (see [`st7789vi_frame_writer_smi`](https://github.com/airball-aero/airball-display/blob/main/src/airball/screen/st7789vi_frame_writer_smi.cpp)) was fairly simple.
+
+{% include imagelink.md img="new-display-bench.jpg" link="https://photos.app.goo.gl/WLuh4FyV63Z1QHxE7" %}
+
+The next step was a minimum viable PCB and mechanical build that put all the wiring together using the existing Raspberry Pi 3A+, and allowed us to test the ergonomics. In addition to basic GPIO wiring, this incorporated a backlight LED driver with PWM dimming by the Raspberry Pi. The result was this device:
+
+{% include gallery.md imgs="new-display-first-front.jpg,new-display-first-side.jpg" %}
+
+And as you can see from this video, the utility of the device was immensely improved as a result of the brightness and "heads up" location right on the aircraft centerline. Thank you Jimmy:
+
+{% include imagelink.md img="new-display-flying.png" link="https://photos.app.goo.gl/zDef3VpSJ52WqYiZ6" %}
