@@ -207,6 +207,18 @@ I could now install the system in my airplane and have a convenient panel-mounte
 
 I turned my attention to the air data probe, hoping to shrink the form factor and make it more reliable. After a lot of experience with the battery powered version, it was becoming clear that people just wanted a more permanently installable unit. As I shopped my work around, I came to realize that my primary "market" is people with [Experimental Amateur-Built](https://www.faa.gov/aircraft/gen_av/ultralights/amateur_built) aircraft, on which it's far easier to install accessories without complex FAA approvals. The "clip-on" and battery charging are less useful there.
 
-I redesigned the probe PCBs to re-arrange the layout, adding among other things a voltage regulator and a CANBus interface. Now there were three PCBs: A main compute module; a carrier for 3 main pressure sensors using SPI; and a carrier for the barometer and thermometer using I2C.
+I redesigned the probe PCBs to re-arrange the layout, adding among other things a voltage regulator and a CANBus interface. Now there were three PCBs: A main compute module; a carrier for the barometer and thermometer using I2C; and a carrier for 3 main pressure sensors using SPI.
 
 {% include gallery.md imgs="compact-probe-components.png,compact-probe-connectors.png,baro-temp-qwiic-components.png,baro-temp-qwiic-connectors.png,pressure-spi-3.png" %}
+
+The mechanical parts count was now massively reduced, by using a stack solid parts as "manifolds" to route the pressures to the various sensors. I could also use the new wind tunnel calibration to eliminate the long brass static pressure probe, and have side holes serving the same function:
+
+{% include gallery.md imgs="compact-probe-mech-assembled.png,compact-probe-mech-exploded.png,compact-probe-completed.jpg" %}
+
+See the [**more complete build album**](https://photos.app.goo.gl/CBAUGTwsZmvsJbtm7) for more photos of the probe under construction!
+
+## Future directions
+
+At this point, I have enough material to have verified most of my important hypotheses. Jimmy and I, and all my co-owners in the [Coyote Valley Sport Flyers](../n291dr_cvsf/) club, have been flying with this hardware for several years now, and we have come to consider it an important part of our flying experience. Sergey Kataev, a flight instructor, regularly brings his students to our airplane to learn using Airball!
+
+The question is what the total addressable market is for this device, and if there is a way to create a simplified product offering that can achieve all these goals with less expense. For example, can we use existing probes and get data that is not as good as what the custom probe provides, but is "good enough"? Can we use CANBus throughout the system to make it easier to install for the typical airplane owner? Can we create a companion app that uses the data to fine-tune the flight configurations of an airplane for optimium performance?
