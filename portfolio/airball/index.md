@@ -209,3 +209,4 @@ I turned my attention to the air data probe, hoping to shrink the form factor an
 
 I redesigned the probe PCBs to re-arrange the layout, adding among other things a voltage regulator and a CANBus interface. Now there were three PCBs: A main compute module; a carrier for 3 main pressure sensors using SPI; and a carrier for the barometer and thermometer using I2C.
 
+{% include gallery.md imgs="compact-probe-components.png,compact-probe-connectors.png,baro-temp-qwiic-components.png,baro-temp-qwiic-connectors.png,pressure-spi-3.png" %}
