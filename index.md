@@ -66,11 +66,8 @@ layout: portfolio
   </div>
 {% endfor %}
 
-<div>
-Content credits:
-<ul>
-<li><a href="https://pixabay.com/users/hai443-39753619/">Hai443</a></li>
-<li><a href="https://www.flaticon.com/free-icons/pinky-promise" title="pinky promise icons">Pinky promise icons created by Freepik - Flaticon</a></li>
-</ul>
-</div>
+<p></p>
+
+<p style="font-size: small">Content credits: Mandala icon by <a href="https://pixabay.com/users/hai443-39753619/">Hai443</a>. Pinky promise icon from <a href="https://www.flaticon.com/free-icons/pinky-promise" title="pinky promise icons">Pinky promise icons created by Freepik - Flaticon</a>.</p>
+
 
