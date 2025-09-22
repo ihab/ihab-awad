@@ -171,6 +171,16 @@ Jimmy uses Airball to compete in a STOL contests, and credits the intuitive huma
 
 {% include imagelink.md img="jimmy-national-stol.png" link="https://www.youtube.com/watch?v=fyoe3qHYqzE&t=14325s" %}
 
+## Education
+
+The Airball system is particularly useful for educating pilots about how their airplane flies. See this presentation I gave at the Hiller Museum in San Carlos, CA, about the system:
+
+{% include imagelink.md img="ihab-hiller-presentation.png" link="https://www.youtube.com/watch?v=MXWuIW_5PoU" %}
+
+See also this YouTube playlist of original videos I created to explain "How Airplanes Fly" in a correct but inuitive and non-mathematical way:
+
+{% include imagelink.md img="ihab-how-airplanes-fly.png" link="https://www.youtube.com/watch?v=6QBWjSOvajY&list=PLadSd3pcmeLuX9xlmwISg20MUvXG_Lmyn" %}
+
 ## Next generation display
 
 Based on feedback from Jimmy, it was clear that the system needed to be more "heads-up" and visible to the pilot. I chose a [Newhaven 2.4 inch 1000 nit 240x320 TFT panel](https://newhavendisplay.com/2-4-inch-sunlight-readable-tft-without-touchscreen/) which, at that time, was available with a SPI or parallel interface. I did not find any comparable LCD panels that had a standard RGB interface allowing me to use (say) a [TFP401](https://www.adafruit.com/product/2218) with the Raspberry Pi HDMI output. But SPI did not give me an adequate frame rate. I therefore needed a more "custom" driver.

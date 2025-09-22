@@ -51,6 +51,8 @@ layout: portfolio
         <p>I am an engineer, visionary, and maker. I build things for a living and for fun, and lead teams with enthusiasm and a growth mentality for myself and for others. I learn what I need to – usually but not always in engineering – to accomplish my goals. I seek interesting problems, and a place where my leadership style is appreciated and can thrive.</p>
 
         <p>I hope the material here can give you an idea of what I'm about and what excites me.</p>
+
+        <p>My <a href="./IhabAwad-Resume.pdf">resume</a> is also available.</p>
     </div>
 </div>
 
