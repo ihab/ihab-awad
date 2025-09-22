@@ -9,7 +9,7 @@ Caryoscope was a project I worked on while at the Department of Genetics at Stan
 
 The genes of an organism are physically represented on strands of DNA, called chromosomes. In some organisms, including humans, these come in matched pairs. The description of an organism's chromosomes is called its _karyotype_. The following shows the chromosomes of a human:
 
-<img src="karyotype.png" width="320px">
+{% include gallery.md imgs="karyotype.png" %}
 
 A gene is _expressed_ when the cellular machinery uses that gene to manufacture the protein that the gene describes. Gene expression data -- the extent to which certain genes are being expressed under given circumstances -- is important in understanding how a cell is using its genes, or conversely, how a gene functions within the cell.
 
@@ -19,13 +19,13 @@ A particular assay, ArrayCGH, is able to determine whole genome _comparative_ ge
 
 We built an interface showing increases and decreases of expression as colored bars, anchored to a simple graphical representation of the karyotpe:
 
-<img src="caryoscope_basic.webp" width="640px">
+{% include gallery.md imgs="caryoscope_basic.webp" %}
 
 Technically, I built the work as a series of graphical widgets which other Java applications could embed based on a data model, where the data model was represented as Java `interface`s. Using these widgets, I also built an application, which could be invoked from the command line, which accepted CSV files in commonly used formats.
 
 I built the graphical interactions using [Piccolo2D](https://piccolo2d.org/), a zooming user interface library. In so doing, I constructed novel interactors to control smooth, live panning and zooming, including an interactor allowing simultaneous different zooming scales along the X and Y axes.
 
-<img src="pan-zoom.webp" width="640px">
+{% include gallery.md imgs="pan-zoom.webp" %}
 
 ## Citation
 

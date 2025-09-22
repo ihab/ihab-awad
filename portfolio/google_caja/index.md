@@ -9,7 +9,7 @@ Google Caja was a project to build an object-capability sandbox within the JavaS
 
 While working on the [Thing Browser](/portfolio/work/thing_browser/) proposal, I ran into a ton of trouble with security. Consider this situation:
 
-<img src="drag-drop.png" width="320px">
+{% include gallery.md imgs="drag-drop.png" %}
 
 In this scenario, **Bob's bagels** is an object of type `Business`. **My neighborhood** is an object of type `Map`. Imagine also some UI affordance to drag-drop a reference to **Bob's bagels** into **My neighborhood**, which could:
 
@@ -26,7 +26,7 @@ At around that time, Mark Miller, Alan Karp, and Marc Stiegler from HP Labs gave
 [Virus Safe Computing Initiative](https://cs.sonoma.edu/colloquium/fall-2006/hp-labs-virus-safe-computing-initiative),
 and I was introduced to the [object-capability model](https://en.wikipedia.org/wiki/Object-capability_model) of security. I learned that this handily deals with flexible sharing under mutual suspicion, and their ideas about "authorization by designation" completely fit with the problems I was facing. As they presented it, my scenarios were all special cases of the "Granovetter diagram" where **Alice**, invoking **Bob**'s method `foo`, passes a reference to **Carol**. If possession of a reference implies the authority to use it, we need no separate authorization plane, no identities, and no ACLs:
 
-<img src="granovetter.png" width="320px">
+{% include gallery.md imgs="granovetter.png" %}
 
 At the language level, object-capability security means that each piece of code has only the powers it is given by its caller; there is no _ambient_ authority. In practice, this means removing singletons. (See also 
 [Singletons Considered Harmful](https://kentonshouse.com/singletons)

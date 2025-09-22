@@ -25,13 +25,13 @@ The result was an iMovie-like interface allowing a variety of Web and Java resou
 
 Sadly, no screenshots or easily workable prototypes of the actual code survive, but it was a really cool UI, and the "Ken Burns animation" concept proved to be a really nice way to demonstrate how content interoperability could lead to novel "application" innovation.
 
-<img src="clinkHighLevelArch.png" width="640px">
+{% include gallery.md imgs="clinkHighLevelArch.png" %}
 
 The internal implementation of the Thing Browser framework provided an interface discovery framework (similar to `IUnknown` in Microsoft COM) to discover supported `Facet`s. Groups of URLs were mapped to OSGi bundles which were dynamically composed into the system. Each bundle had a URL handler which would return an object that the framework could then display.
 
-<img src="facetsOfThings.png" width="640px">
+{% include gallery.md imgs="facetsOfThings.png" %}
 
 The whole thing would be bound together by an "interface repository":
 
-<img src="clinkLayers.png" width="200px">
+{% include gallery.md imgs="clinkLayers.png" %}
 

@@ -37,6 +37,6 @@ The organization has built a community space on 76 Race Street in San Jose, and 
 
 Plant and Soul California is my main social hub, and I count among my fellow volunteers people that I met through the organization and whom I have come to consider chosen family.
 
-| <img src="pasca-fam-0.jpg" class="inline-img"> | <img src="pasca-fam-1.jpg" class="inline-img"> | <img src="pasca-fam-2.jpg" class="inline-img"> |
+{% include gallery.md imgs="pasca-fam-0.jpg,pasca-fam-1.jpg,pasca-fam-2.jpg" %}
 
 <p></p>
