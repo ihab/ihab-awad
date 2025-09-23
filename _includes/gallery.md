@@ -2,6 +2,7 @@
     .gallery-container {
         margin-left: 50px;
         display: flex;
+        flex-wrap: wrap;
     }
     .gallery-img {
         max-width: 150px;
