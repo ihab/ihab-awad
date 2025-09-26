@@ -54,10 +54,7 @@ An archive of our work can be found at [https://github.com/googlearchive/caja](h
 
 ## Secure ECMAScript and friends
 
-While I personally moved on (to [Android Telephony](/portfolio/work/android_telephony)), this work has continued beyond Google, under the auspices of
-[Secure ECMAScript](https://github.com/endojs/endo/blob/master/packages/ses/README.md)
-and
-[Hardened JavaScript](https://hardenedjs.org/). It is being funded by [Agoric](https://agoric.com/) as part of performing blockchain smart contracts securely.
+While I personally moved on, this work has continued beyond Google, under the auspices of [Secure ECMAScript](https://github.com/endojs/endo/blob/master/packages/ses/README.md) and [Hardened JavaScript](https://hardenedjs.org/). It is being funded by [Agoric](https://agoric.com/) as part of performing blockchain smart contracts securely.
 
 ## On Belay!
 
