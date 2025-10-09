@@ -7,7 +7,9 @@ CppPromise is a concurrent computing library I built at Verily with Limu Xiao, a
 
 ## Introduction
 
-CppPromise is expected to be Open Sourced soon -- my friends at Verily are working on this. The following is a very brief introduction.
+> [!NOTE]
+> We just got approval from Verily to Open Source CppPromise. Check it out at:
+> [`github.com/cpppromise/cpppromise`](https://github.com/cpppromise/cpppromise)
 
 The library allows programmers to build their C++ programs as a series of independent event loops, each with its own independent state, passing messages consisting of (logically) immutable data. A programmer can write an API for an event loop that manages a camera sensor in a system, for example, as follows:
 
