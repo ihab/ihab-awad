@@ -36,5 +36,3 @@ Programmers can do idiomatic `Then()` chaining as they would in JavaScript, and 
 The system also includes a pub/sub mechanism that operates similarly.
 
 This work allowed Verily people of all experience -- including mechanical engineers -- to contribute to the core C++ software without the usual hazards. This in turn allowed engineers with experience in machine learning, image processing, and the application domain, to work directly with us, and was both a morale and technical force multiplier.
-
-I hope to share more once this work is Open Sourced.

@@ -137,7 +137,7 @@ The data display has also gone through lots of iterations, but in all cases, it 
 
 ## Wireless battery powered clip-on system
 
-The project reached a good technology milestone with an iteration of the system that could be installed on a wide range of aircrat without having to go through any FAA regulated approvals. This required a clip-on, battery powered air data probe; a display unit that could be powered by a USB charger; and wireless communication between the probe and display.
+The project reached a good technology milestone with an iteration of the system that could be installed on a wide range of aircraft without having to go through any FAA regulated approvals. This required a clip-on, battery powered air data probe; a display unit that could be powered by a USB charger; and wireless communication between the probe and display.
 
 The probe is built around a system of 4-40 threaded rods that clamp the whole assembly together, while 3D printed inserts form the structural and aerodynamic components. A mounting plate mates with a pair of studs, and is secured with a thumb screw, allowing the probe to be removed for charging. The PCB is an SMT design incorporating an ESP32 module, battery charging and monitoring, and interfaces to the sensors:
 
