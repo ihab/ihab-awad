@@ -3,17 +3,11 @@ layout: page
 title: My ethos
 ---
 
-A large part of how I am effective in teams is as a leader. Yet I am not, and do not seek to become, a people manager. My approach to leadership is based on my own experiences of work and life, and what I have observed to work best.
-
-## About that little tee
-
-A large number of people in tech are not neurotypical. Many of us have worked very hard and made a lot of sacrifices to get where we are. Many of us were not fully accepted by our peers, either because of our shortcomings, or our abilities, or often both. A lot of us struggle with emotions and human connection.
-
-All this stuff creates little-t trauma, which I distinguish from big-T trauma like what people from actual war zones feel. (And some of our colleagues have the big-T trauma too, as with my good friend and co-worker who fled the Balkan wars to come to the US.)
+A large part of how I am effective in teams is as a leader. My approach to leadership is based on my own experiences of work and life, and what I have observed to work best.
 
 ## The empty promise of rationalism
 
-Because we are engineers, we like to think that we can _quantify_ things that concern us. If it works for chemicals and compute clusters, it must also work for colleagues. And yet it does not. My experience is that attempts to "manage" teams that focus on the tools, and ignore the people, are bound to cause conflict and dissatisfaction. You may have all the tasks in Jira, but you don't have the nagging doubts of one engineer and the wild dreams of another. Both may be crucial to your business. You may have story points for your tasks, but you can't account for the morale loss when someone is forced to do something they don't like. You may have "scripts" for handling difficult situations, but you lose the nuance of the actual living, breathing individual sitting in front of you.
+Because we are engineers, we like to think that we can _quantify_ things that concern us. If it works for chemicals and compute clusters, it must also work for colleagues. And yet it does not. My experience is that attempts to "manage" teams that focus on the tools, and ignore the people, are bound to cause conflict and dissatisfaction. You may have all the tasks in Jira, but you don't have the nagging doubts of one engineer and the wild dreams of another. Both may be crucial to your business. You may have story points for your tasks, but you can't account for the morale loss when someone is forced to do something they don't like. You may have "scripts" for handling difficult situations, but you lose the nuance of the actual living, breathing individual sitting in front of you. (MAYBE WE INSTEAD OF YOU? aLIGN PRONOUnS THROUGHOUT)
 
 ## A maze of twisty people, all different
 
@@ -25,7 +19,7 @@ Another great influence has been the practice of <a href="https://en.wikipedia.o
 
 ## Service leadership
 
-My approach, then, is that I exist to serve my team. And in particular, my "competition" as a leader is not some other potential leader.  My "competition" is the state of having _no leader at all_. I want my team to choose me because I make their work better and happier and more effective. I want them to choose me because I help them improve their ideas, and do not take away their credit. I want them to choose me because I listen and care about them. I want them to choose me out of love.
+My approach, then, is that I exist to serve my team. And in particular, my "competition" as a leader is not some other potential leader.  My "competition" is the state of having _no leader at all_. I want my team to choose me because I make their work better and happier and more effective. I want them to choose me because I help them improve their ideas, and do not take away their credit. I want them to choose me because I listen and care about them.
 
 And to do so, I must be vulnerable, and encourage others to do the same, in an environment that has high standards but is also safe. It's not easy to do, but when it works, it is magical.
 
